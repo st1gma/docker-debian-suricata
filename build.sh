@@ -11,4 +11,4 @@ mkdir /data/{configs,logs,pcaps}
 chown -R $USER:$GROUP /data
 
 ## build suri docker
-build . -t suri:latest
+docker build . -t suri:latest

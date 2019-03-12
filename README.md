@@ -9,7 +9,7 @@ $ ./build.sh
 ### To use
 Create or obtain the PCAP to be analyzed and place it in /data/pcaps
 ```sh
-$ docker --rm -it suricata:latest -r /data/pcaps/<yourpcap>.pcap
+$ docker --rm -it -v /data:/data suricata:latest -r /data/pcaps/<yourpcap>.pcap
 ```
 Create a file named custom.rules in /data/configs and add all your custom rules, they will be automatically ingested.
 
